@@ -5,7 +5,7 @@ import SongList from '../components/SongList';
 
 const SongScreen = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <SongDetail />
       <SongList />
     </View>
@@ -14,4 +14,10 @@ const SongScreen = () => {
 
 export default SongScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
